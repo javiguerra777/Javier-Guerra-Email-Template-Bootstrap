@@ -1,0 +1,65 @@
+body, html {
+    margin: 0px;
+}
+body {
+    overflow: auto;
+    background-color: white;
+}
+
+#column-one{
+    background-color: rgb(33,33,33);
+    color:white;
+}
+#column-two{
+    background-color: lightgrey;
+}
+#column-three{
+    background-color: white;
+}
+.btn {
+    background-color: orange;
+    width: 100%;
+    min-width: 100%;
+}
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column {
+    height: 100vh;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+}
+#card-two {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 9px 0px #10BCE8;
+}
+.formatting {
+    font-size: 10px;
+}
+#first-image {
+    height: 30px;
+    width: 30px;
+}
+#first-flex {
+    justify-content: space-around;
+}
+.first-column {
+    padding-top: 40px;
+}
+nav {
+    padding-bottom: 30px;
+}
+.column {
+    padding-top: 20px;
+}

@@ -1,0 +1,1 @@
+This is an email template project. I used bootstrap, html/css to create this project
