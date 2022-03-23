@@ -1,37 +1,48 @@
+/* html tag styles */
+a {
+text-decoration: none;
+color: whitesmoke;
+}
+a{
+    width: 10% ;
+}
+a:hover {
+    color: blue;
+}
+a:visited{
+    color: purple;
+}
+
 body, html {
     margin: 0px;
 }
 body {
     overflow: auto;
     background-color: white;
+    overflow-x: hidden;
+}
+li {
+    padding-bottom: 15px;
+}
+nav {
+    padding-bottom: 30px;
 }
 
-#column-one{
-    background-color: rgb(33,33,33);
-    color:white;
-}
-#column-two{
-    background-color: lightgrey;
-}
-#column-three{
-    background-color: white;
-}
-.btn {
-    background-color: orange;
-    width: 100%;
-    min-width: 100%;
-}
-.header {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.column {
-    height: 100vh;
-}
+/* class styles */
 .box {
     display: flex;
     flex-direction: column;
+}
+.btn {
+    background-color: orange;
+    font-size: 1rem;
+    width: 100%;
+    min-width: 100%;
+    padding-right: 20px;
+}
+.btn:hover {
+    color: white;
+    background-color: rgb(145, 108, 41);
 }
 .card {
     padding-top: 10px;
@@ -39,13 +50,61 @@ body {
     background-color: transparent;
     border: none;
 }
+.column {
+    padding-top: 20px;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.container-fluid {
+    height: 100vh;
+}
+.first-column {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.formatting {
+    font-size: 10px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.myList1 {
+    list-style-type: none;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.textarea {
+    width: 100%;
+}
+.searchBar {
+    width: 100%;
+}
+/* id styles */
 #card-two {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 5px 9px 0px #10BCE8;
 }
-.formatting {
-    font-size: 10px;
+#column-one{
+    background-color: rgb(33,33,33);
+    color:white;
+    width: 20%;
+}
+#column-two{
+    background-color: lightgrey;
+    width: 40%;
+}
+#column-three{
+    background-color: white;
+    width: 40%;
 }
 #first-image {
     height: 30px;
@@ -54,12 +113,18 @@ body {
 #first-flex {
     justify-content: space-around;
 }
-.first-column {
-    padding-top: 40px;
-}
-nav {
-    padding-bottom: 30px;
-}
-.column {
-    padding-top: 20px;
+/* media queries */
+@media screen and (max-width: 800px) {
+    #column-one {
+        width: 95%;
+    }
+    #column-two {
+        width: 95%
+    }
+    #column-three {
+        width: 95%;
+    }
+    .row {
+        flex-direction: column;
+    }
 }

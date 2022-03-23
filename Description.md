@@ -1,1 +1,1 @@
-This is an email template project. I used bootstrap, html/css to create this project
+This is an email template project. I converted the bootstrap to media queries in the test.css file
